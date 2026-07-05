@@ -1,3 +1,6 @@
 __pycache__/
 *.pyc
 .venv/
+newm/mav.parm
+newm/mav.tlog
+newm/mav.tlog.raw

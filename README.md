@@ -68,22 +68,21 @@ Connect your laptop and Jetson Nano via **smartphone hotspot** for stable commun
 
 ## Supported Commands (via Keyboard / Socket)
 
-| Command          | Action                              |
-|------------------|-------------------------------------|
-| `Space`          | Arm                                 |
-| `Esc`            | Disarm + Kill                       |
-| Arrow Keys       | Throttle / Yaw                      |
-| `W` / `S`        | Pitch Up / Down                     |
-| `A` / `D`        | Roll Left / Right                   |
-| `1-8`            | Change throttle levels / modes      |
-| `m`              | Toggle distance sensor + height hold|
-| `g` / `h`        | Start / Stop manual computer control|
-| `l` / `k`        | Start / Stop camera detection       |
-| Calibration keys | Gyro, Level, etc.                   |
+| Command          | Action                               |
+|------------------|--------------------------------------|
+| `Space`          | Arm                                  |
+| `Esc`            | Disarm + Kill                        |
+| Arrow Keys       | Throttle / Yaw                       |
+| `W` / `S`        | Pitch Up / Down                      |
+| `A` / `D`        | Roll Left / Right                    |
+| `m`              | Toggle distance sensor + height hold |
+| `g` / `h`        | Start / Stop manual computer control |
+| `l` / `k`        | Start / Stop camera detection        |
+| `1` / `2` / `3` / `0`  | Stablize, Alt, Pos, Land modes.|
+
 
 ---
 
- 
 
 ## Software Stack
 
@@ -160,7 +159,7 @@ Object detection is performed using **YOLOv4-tiny**.
 
 Although pretrained models can be used, training a custom model for your specific environment is strongly recommended.
 
-Since the Jetson Nano has limited computational resources, keeping the number of object classes below **five** significantly improves inference speed.
+Since the Jetson Nano has limited computational resources, keeping the number of object classes below **five** significantly improves loop operation speed.
 
 ---
 
